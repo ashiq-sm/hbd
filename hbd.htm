@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+ <style>
+ @keyframes shadowPulse
+{
+    
+    from {box-shadow:-3px 1px 11px crimson,-11px 11px 15px 2px #333,
+    0px 3px 11px cyan;}
+   
+    30%{
+        box-shadow:3px 1px 11px teal,11px 11px 15px 2px #333,
+    0px 3px 11px cyan;
+    }
+    60%{
+        box-shadow:3px -1px 11px teal,11px -11px 15px 2px #333,
+    0px 3px 11px cyan;
+    }
+    80%{
+        box-shadow:-3px -1px 11px pink,-11px -11px 15px 2px #333,
+    0px 3px 11px cyan;
+    }
+    to {
+    box-shadow:-3px 1px 11px ,-11px 11px 15px 2px #333,
+    0px 3px 11px cyan; }
+       
+}
+
+@keyframes borderPulse{
+    50%{border:2px solid lime;}
+}
+
+
+ #myDiv 
+ {
+  background:linear-gradient(-45deg, crimson , lightskyblue,teal,pink, crimson);  
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:Orange;
+  text-shadow:-3px 2px 1px black;
+  font-size:1.1em;
+  font-weight:bolder;
+ }
+ 
+ 
+#now {
+    color:#fff;
+   padding:20px;
+   border-radius:7px;
+   color:#aaa;
+    background:rgba(3,5,9,0.5);
+} 
+
+
+ 
+ p
+{
+  background:black;
+  padding:20px;
+  color:#f8f8f8;
+  display:inline-block;
+  margin:1em;
+  border-radius:7px;
+  animation:shadowPulse 7s infinite;
+  font-weight:bolder;
+  
+                 
+}
+
+marquee{
+   font-size:1.3em; 
+   color:#aff;
+font-familly:"Courier";
+/*animation:shadowPulse 7s infinite;*/
+margin:1.3em;
+color:#000;
+text-shadow:2px 3px 4px #fff;
+} 
+
+#mySecs, #myMs, a{
+    color:lightskyblue;
+    animation:borderPulse 1s  infinite;
+    border:2px solid black;
+    box-size:border-box;
+}
+
+
+ </style>   
+        
+    
+
+    
+<div id="myDiv">  
+ <div id="now"> </div>
+          
+Hi,<b id="uName"></b>!   
+<br /> <br/>  <br/> 
+ Only
+ <br />
+    
+     <p id="myDays"> </p>
+ <br/>
+ 
+ 
+ <p id="myHrs"> p</p>
+ <p id="myMins"> p</p> 
+ 
+ <br/>  
+       <p id="mySecs"> p</p>    
+        <p id="myMs"> p</p>      
+<br />   
+Remaining untill your birthday!<br/>
+Come again to me on just time(on your birthday)🕛
+<br />
+To observe what is going to be happened? gift(/Wish).🧭🙂
+
+<br />
+<marquee>
+"Happy birthday" in advance,<b id="uName"></b>...
+ </marquee>  
+ 
+
+
+<p ><marquee height="89px" direction="up">
+  "A s h i q"
+ </marquee>
+     <br />
+     <a href="https://www.facebook.com/sm1ar">Be friend?</a>
+ </p>
+ 
+   
+</div>      
+      
+<!--mod-->
+<!-- Created by Mikhail -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+ <style>
+  /* Created by Mikhail */
+
+
+#body {
+    background: url('https://i.pinimg.com/originals/89/51/05/895105a12b9ad0618e55ae58fd836a80.jpg');
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+}
+
+.gift {
+    position: fixed;
+    top: -60vw;
+    left:25vw;
+    width: 50vw;
+    height: 60vw;
+    
+    transition: top 5s;
+    z-index: 5;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    position: fixed;
+    top: 22vh;
+    left: 10vw;
+    width: 80vw;
+    height: 60vh;
+    text-align: center;
+    padding: 10px;
+    color: lightblue;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+}
+
+.btn {
+    width: 70vw;
+    height: 8vh;
+    position: fixed;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5FE31F;
+    color: red;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1s linear infinite;
+    opacity: 0;
+    display: none;
+    transition: opacity 5s;
+}
+
+@keyframes pulse {
+    50% {transform: translateX(-50%) scale(1.2)}
+    to {transform: translateX(-50%) scale(1)}
+}
+
+@keyframes frame {
+    from {border: 10px solid #ff0000}
+    20% {border: 10px solid #00ff00}
+    40% {border: 10px solid #EF19D4}
+    60% {border: 10px solid #EFEA19}
+    80% {border: 10px solid #19EFEF}
+    to {border: 10px solid #ff0000}
+}
+
+
+
+#d1 {
+    width: 30vw;
+    height: 38vw;
+    position: fixed;
+    right: 10px;
+    display: none;
+}   
+     
+ </style>    
+     
+<div id="body">     
+        
+        <div class='gift'>
+            <img />
+        </div>
+        <div class='text'></div>
+        <div class='btn'>YEAH 😅 I WANT IT😇</div>
+        <div class='frame'></div>
+        
+        <div id='d1'><img/></div>
+        <div id='d2'><img/></div>
+        
+        
+        
+</div>        
+<script>
+
+    
+    // Created by SM
+
+window.onerror = function(e){
+        return true;
+    }
+
+function ashiq(){
+    
+const btn = document.querySelector('.btn')
+const gift = document.querySelector('.gift');
+listener1 = btn.addEventListener('click', ShowGift)
+
+function ShowGift(){
+
+    let audio = new Audio();
+    audio.src = 'https://w1.musify.club/track/dl/14172600/dj-bobo-happy-birthday-radio-edit.mp3';
+    audio.play();
+    
+    gift.querySelector('img').src = 'https://img-fotki.yandex.ru/get/4126/181450557.62/0_a3d5c_b2d95a41_orig.jpg';
+    
+    gift.style.top = '20vh';
+    text.style.color = 'transparent';
+    setTimeout(function(){
+        btn.style.background = 'red';
+        btn.style.color = 'lightblue';
+        btn.innerText = 'I HAVE SMTH ELSE FOR YOU馃榾'
+    btn.removeEventListener('click',ShowGift);
+    btn.addEventListener('click', ShowWishes);
+
+    }, 3000)
+    
+}
+    
+let text1 = 'Hi '+uName+'!?!@Today is your Birthday!@😊😇🙂@Do you want to receive a special gift?🎁';
+
+let text2 = 'Happy Birthday ,dear ' + uName+ '!@I wish you all the best in your life! May all your dreams come true! May all your relatives stay healthy and happy by the Grace Of Almighty! I wish you always reach your goals(both in here and hereAfter life)! @Stay safe, strong & happy!!!🤲🏻🤲@ HAPPY BIRTHDAY 🎁🎁 ';
+
+let count1 = 0;
+let count2 = 0;
+let flag = false;
+let flag1 = false;
+const text = document.querySelector('.text');
+
+function Write_Text() {
+    
+    if (count1 < text1.length) {
+        text.innerHTML += text1[count1];
+        count1 +=1;
+        if (text1[count1] == '@'){
+            text.innerHTML += '<br /><br />';
+            count1++;
+        }
+    }
+    
+    else if (flag){
+        text.innerHTML += text2[count2];
+        count2 += 1;
+        if (text2[count2] == '@'){
+            text.innerHTML += '<br /><br />';
+            count2 += 1;
+        }
+        
+        if (count2 == text2.length) {
+            clearInterval(interval);
+        }
+    }
+    
+    if (count1 == text1.length && !flag1) {
+        btn.style.display = 'flex';
+        setTimeout(function(){
+            flag1 = true;
+            btn.style.opacity = 1;
+        },200)
+        
+    }
+    
+}
+
+function ShowWishes(){
+    
+    text.style.color = 'yellow';
+    text.style.fontSize = '1.15em';
+    gift.style.top = '65vh';
+    text.innerHTML = '';
+    flag=true;
+    btn.removeEventListener('click', ShowWishes);
+    text.style.border = '10px solid yellow'
+    text.style.animation = 'frame 3s linear infinite';
+    
+    setTimeout(function(){
+        let d1 = document.querySelector('#d1');
+        let d2 = document.querySelector('#d2');
+    
+        d1.querySelector('img').src = 'https://i.gifer.com/origin/64/64abe69f78d6620fb9a2ddb096d542d3.gif';
+        d1.style.display = 'block';
+        btn.style.opacity = 0;
+    },2000)
+}
+
+
+
+
+setTimeout(function(){
+    interval = setInterval(Write_Text, 80);
+},1000)
+
+    
+    
+    
+}
+
+  
+   
+   
+   
+   
+      
+      
+
+ var now = new Date(); 
+ var myTxt = "Assalamu alaikum.<br /> Today is: <br /> ";
+ document.getElementById("now").innerHTML = myTxt + now;
+
+
+var uName=prompt("Peace be upon you.🤲🏻\nBirthday is near?!?\nLet me know the way you want to get wished..🎁😇🎁\n(Enter your sweet nickname):");
+
+var mnt = "Jun" //prompt("Enter name of month you born(Jan,Feb,,.Dec)\n");
+
+var dd= 11 //prompt("Enter Date of that month such as 1,2,3,..31\n:");
+var yr= 2023 //prompt("Enter Current year(2021,2022,,,etc):");
+
+if(dd>31||yr<2020){
+    alert(" Please enter date and current year correctly![সঠিক ভাবে লিখুন।]🙂")
+}
+
+
+
+
+    var d2 = new Date(mnt + dd +"," + yr +" 00:00:00");
+
+
+var x =setInterval(function()
+{
+
+var d1 = new Date();
+
+
+
+
+
+var d = d2 - d1;//remaining miliseconds...
+
+secs = d/1000;
+mins = secs/60;
+ hrs = mins/60;
+ days = (hrs/24);
+
+
+onlyDays = Math.floor(days);
+
+
+hrs1 =(days - onlyDays)*24;
+onlyHrs =Math.floor(hrs1);
+
+
+mins1 = (hrs1 - onlyHrs)*60;
+onlyMins = Math.floor(mins1);
+
+
+secs1 =(mins1 -onlyMins)*60;
+onlySecs =Math.floor(secs1);
+
+ms1 = (secs1 - onlySecs )*1000;
+onlyMs = Math.floor(ms1);
+
+
+
+
+
+var myDays = document.getElementById("myDays");
+
+
+var myHrs = document.getElementById("myHrs");
+var myMins = document.getElementById("myMins");
+var mySecs = document.getElementById("mySecs");
+var myMs = document.getElementById("myMs");
+
+
+
+
+myDays.innerHTML =onlyDays +" Days";
+
+myHrs.innerHTML = onlyHrs +" Hrs";
+     
+myMins.innerHTML =onlyMins +" Mins";  
+
+mySecs.innerHTML = onlySecs +" Secs";
+  
+
+myMs.innerHTML =onlyMs +" mSecs";
+
+document.getElementById("uName").innerHTML = uName;
+
+/*
+myDays.innerHTML=onlyDays +" days " + onlyHrs +" hrs "+ onlyMins +"  mins "+onlySecs +" seconds " +onlyMs + "ms";    
+*/
+
+if (d < 0){
+   clearInterval(x);
+ document.getElementById("myDiv").innerHTML = "Happy birthDay <br /> "+uName+"🎁";
+ ashiq();
+//mod 
+
+
+    
+    
+    if(onlyDays <-1){
+        
+      document.getElementById("myDiv").innerHTML ="I wished u  on "+ d2 +"as like as this👇 <br/><br/>"+uName+"<br/>Did u Like it???🙂Did't like the song?Oh!😅It's ok.Next time inform me about your favourite song,too. Thank u..🙂";       
+        
+    }
+    
+}
+
+
+
+},1)
+
+</script>      
+
+
